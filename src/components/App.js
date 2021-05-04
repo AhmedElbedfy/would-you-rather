@@ -35,6 +35,7 @@ class App extends Component {
 
                 <Route path="/login" component={Login} />
                 <Route path='/*' component={NotFound} />
+                <Route path='/not-found' component={NotFound} />
 
               </Switch>
             </div>

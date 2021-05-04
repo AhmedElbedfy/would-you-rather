@@ -3,9 +3,9 @@ import { connect } from "react-redux";
 import { setAuthedUser } from '../actions/authedUser';
 import { useHistory } from "react-router-dom";
 
-function Login({ users, dispatch }) {
+function Login({ users, dispatch, location }) {
     const [user, setUser] = useState("");
-
+    const { from } = location.state || { from: { pathname: '/' } };
     const history = useHistory();
 
     const handleChange = (e) => {
@@ -14,7 +14,7 @@ function Login({ users, dispatch }) {
 
     const handleClick = () => {
         dispatch(setAuthedUser(user));
-        user && history.push("/");
+        user && history.push(from.pathname);
     };
 
     return (

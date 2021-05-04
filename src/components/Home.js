@@ -51,6 +51,14 @@ function mapStateToProps({ questions, authedUser, users }) {
         }
     }
 
+    answerdQ = answerdQ.sort(function (x, y) {
+        return y.timestamp - x.timestamp;
+    });
+
+    unAnswerdQ = unAnswerdQ.sort(function (x, y) {
+        return y.timestamp - x.timestamp;
+    });
+
 
     return {
         questions,

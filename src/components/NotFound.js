@@ -7,7 +7,7 @@ export default function NotFound() {
             <p>
                 Page Not Found, Code 404.
             <br />
-            Please <Link to="login" className="link"> Sign In</Link>
+            Go to <Link to="/" className="link"> Home Page</Link>
             </p>
         </div>
     );
