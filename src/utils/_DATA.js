@@ -24,7 +24,7 @@ let users = {
   johndoe: {
     id: 'johndoe',
     name: 'John Doe',
-    avatarURL: "http://elfagracademy.org/FACD/assets/images/STU.png",
+    avatarURL: "https://www.w3schools.com/w3css/img_avatar2.png",
     answers: {
       "xj352vofupe1dqz9emx13r": 'optionOne',
       "vthrdm985a262al8qx3do": 'optionTwo',
